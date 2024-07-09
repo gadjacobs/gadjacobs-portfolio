@@ -19,7 +19,7 @@ export default function Home() {
       <Container className="flex flex-col gap-y-4">
         <p className="text-sm text-center md:text-left">About Me:</p>
         <h1 className="text-2xl font-medium text-center md:text-3xl md:text-left">
-          <span className="text-gray-500">{'{{'}</span> Frontend Engineer{' '}
+          <span className="text-gray-500">{'{{'}</span>Frontend Engineer
           <span className="text-gray-500">{'}}'}</span> @ ConvertKit 🚀
         </h1>
         <div className="flex overflow-scroll gap-x-2 no-scrollbar">

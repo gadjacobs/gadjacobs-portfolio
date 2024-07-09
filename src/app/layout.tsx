@@ -1,10 +1,10 @@
 import Navbar from '@/components/Navbar/Navbar';
 import type { Metadata } from 'next';
-import { Encode_Sans } from 'next/font/google';
+import { Encode_Sans, Source_Code_Pro } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/utils/ThemeProvider';
 
-const encodeSans = Encode_Sans({ subsets: ['latin'] });
+const sourceCodePro = Source_Code_Pro({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Gad Jacobs - Senior Frontend Engineer',
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${encodeSans.className} max-w-3xl m-auto p-6 flex flex-col gap-y-4`}
+        className={`${sourceCodePro.className} max-w-3xl m-auto p-6 flex flex-col gap-y-4`}
       >
         <ThemeProvider
           attribute="class"
