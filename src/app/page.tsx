@@ -104,7 +104,7 @@ export default function Home() {
       <Container className="flex flex-col items-center gap-y-2 md:items-start">
         <h2 className="text-2xl font-medium">Experience</h2>
         {/* Work experience item */}
-        <div className="flex flex-col items-center justify-between gap-2 py-4 border-b md:flex-row md:items-start">
+        <div className="flex flex-col items-center justify-between gap-2 py-4 border-b md:flex-row md:items-start w-full">
           <div className="flex flex-col items-center gap-1 md:flex-row">
             <FaGoogle size={24} />
             <p className="text-base">
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
           <p>Jun 2023 - Present</p>
         </div>
-        <div className="flex flex-col items-center justify-between gap-2 py-4 border-b md:flex-row md:items-start">
+        <div className="flex flex-col items-center justify-between gap-2 py-4 border-b md:flex-row md:items-start w-full">
           <div className="flex flex-col items-center gap-1 md:flex-row">
             <FaPaypal size={24} />
             <p className="text-base">
@@ -123,7 +123,7 @@ export default function Home() {
           </div>
           <p>Jun 2023 - Present</p>
         </div>
-        <div className="flex flex-col items-center justify-between gap-2 py-4 border-b md:flex-row md:items-start">
+        <div className="flex flex-col items-center justify-between gap-2 py-4 border-b md:flex-row md:items-start w-full">
           <div className="flex flex-col items-center gap-1 md:flex-row">
             <FaApple size={24} />
             <p className="text-base">
