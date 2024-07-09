@@ -1,6 +1,8 @@
+import Navbar from '@/components/Navbar/Navbar';
 import type { Metadata } from 'next';
 import { Encode_Sans } from 'next/font/google';
 import './globals.css';
+import { ThemeProvider } from '@/utils/ThemeProvider';
 
 const encodeSans = Encode_Sans({ subsets: ['latin'] });
 
@@ -16,8 +18,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${encodeSans.className} max-w-3xl m-auto p-6 border`}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${encodeSans.className} max-w-3xl m-auto p-6 flex flex-col gap-y-4`}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
